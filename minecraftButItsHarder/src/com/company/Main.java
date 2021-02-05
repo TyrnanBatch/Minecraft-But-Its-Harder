@@ -48,27 +48,4 @@ public class Main extends JavaPlugin {
 
         return false;
     }
-    
-    @EventHandler
-    public void creatureSpawn(CreatureSpawnEvent event) {
-
-            if (event.getEntityType() == EntityType.CREEPER) {
-                Creeper creeper = (Creeper) event.getEntity();
-                creeper.setPowered(true);
-                System.out.println("creeper");
-                Bukkit.broadcastMessage("CREEPER detected");
-            }
-
-            if (event.getEntityType() == EntityType.ZOMBIE) {
-
-                Zombie zombie = (Zombie) event.getEntity();
-                zombie.getEquipment().setHelmet(new ItemStack(Material.DIAMOND_HELMET));
-                zombie.getEquipment().setHelmet(new ItemStack(Material.DIAMOND_HELMET));
-                zombie.getEquipment().setHelmet(new ItemStack(Material.DIAMOND_HELMET));
-                zombie.getEquipment().setHelmet(new ItemStack(Material.DIAMOND_HELMET));
-                System.out.println("zombie");
-                Bukkit.broadcastMessage("ZOMBIE detected");
-            }
-
-        }
 }
