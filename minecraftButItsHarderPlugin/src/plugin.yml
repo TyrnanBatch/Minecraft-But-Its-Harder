@@ -1,7 +1,0 @@
-main: me.tyrnan.spigotAPITesting.Main
-name: SpigotAPITesting
-version: 1.0
-author: Tyrnan
-
-commands:
-  Test
